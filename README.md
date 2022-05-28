@@ -24,9 +24,13 @@ Bookmark allows users to organize and save web content during their learning jou
 [Trello](https://trello.com/b/dN9JZItA/project-4)
 - 
 
-Wireframe: <img src = "Wireframe.png">
+Wireframe: 
+<br>
+<img src = "Wireframe.png">
 
 
-ERD: <img src = "ERD.png">
+ERD: 
+<br>
+<img src = "ERD.png">
 
 ### 🚀 Next Steps 
