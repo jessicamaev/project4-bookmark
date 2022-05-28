@@ -22,9 +22,11 @@ Bookmark allows users to organize and save web content during their learning jou
 ### 🔎 Getting Started 
 
 [Trello](https://trello.com/b/dN9JZItA/project-4)
+- 
 
-Wireframe:
+Wireframe: <img src = "Wireframe.png">
 
-ERD: 
+
+ERD: <img src = "ERD.png">
 
 ### 🚀 Next Steps 
