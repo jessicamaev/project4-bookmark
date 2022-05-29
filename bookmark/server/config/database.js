@@ -1,3 +1,5 @@
+//how to connect back-end? (after finishing react?)
+
 // const mongoose = require('mongoose');
 
 // mongoose.connect(''), {
@@ -9,4 +11,5 @@
 // db.on('connected', () => {
 //     console.log(`connected with mongodb ${db.host}:${db.port}`)
 // })
+
 

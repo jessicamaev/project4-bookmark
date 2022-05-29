@@ -1,11 +1,16 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+
+import Homepage from './components/Homepage'
 import About from './pages/About';
 
 function Routes() {
     return (
-
-        <Route path="/about" component={About} />
+        //homepage -> homepage component -- (folders)
+        <Switch>
+            <Route path="/about" component={About} exact />
+            <Route path="/" component={Homepage} />
+        </Switch>
 
     );
 }

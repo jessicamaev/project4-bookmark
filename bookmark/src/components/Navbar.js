@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 
-function Navigation() {
+function Navigation({ onCreateNewBookmark }) {
     return (
         <Navbar className="logo" sticky="top">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -21,6 +21,7 @@ function Navigation() {
                         About
         </Nav.Link>
 
+
                     <FormControl
                         type="text"
                         placeholder="Search"
@@ -31,8 +32,7 @@ function Navigation() {
             </Navbar.Collapse>
 
             <Form inline>
-
-                <Button variant="outline-dark">Add Link</Button>
+                <Button onClick={onCreateNewBookmark} variant="outline-dark">Add Link</Button>
             </Form>
 
             <Nav.Link style={{ color: "black" }} href="/login">
