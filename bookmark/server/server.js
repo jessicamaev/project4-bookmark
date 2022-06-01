@@ -1,14 +1,40 @@
 const express = require('express');
+// const bodyParser = ("body-parser");
+// const cors = require("cors");
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
+const mongoose = require('mongoose');
+const bookmarkModel = require('./models/Bookmark.model.js');
+const dbConfig = require("./config/db.config.js");
 
 const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 
-app.use(express.json());
+mongoose.connect(dbConfig.url);
+const bookmark = mongoose.model('bookmark', bookmarkModel);
+
+
+
+// app.use(cors(cotsOptions));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+
+// const db = require("./models")
+// db.mongoose
+//     .connect(db.url, {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true
+//     })
+//     .then(() => {
+//         console.log("Connected to the database!");
+//     })
+//     .catch(err => {
+//         console.log("Cannot connect to the database!", err);
+//         process.exit();
+//     });
 
 // Configure both serve-favicon & static middlewares
 // to serve from the production 'build' folder
@@ -25,6 +51,18 @@ app.get('/', function (req, res) {
     res.send('hello world')
 
 })
+
+//send database success message 
+
+app.post('/CreateNewBookmark', function (req, res) {
+    console.log(req.body)
+    res.redirect('back')
+})
+
+// app.post('/createNewBookmark', () => { LOGIC HERE })
+
+
+
 // app.get('/*', function (req, res) {
 //     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 // })

@@ -6,6 +6,9 @@ function Homepage() {
         <>
             <h1>Welcome to Bookmark</h1>
             <p>Keep track of your learning journey</p>
+
+            <p>List</p>
+
         </>
     )
 }

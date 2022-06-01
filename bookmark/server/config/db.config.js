@@ -2,7 +2,9 @@
 
 // const mongoose = require('mongoose');
 
-// mongoose.connect(''), {
+
+// mongoose.connect("mongodb://localhost:27017/bookmark");
+
 //     useNewUrlParser: true
 // });
 
@@ -12,4 +14,7 @@
 //     console.log(`connected with mongodb ${db.host}:${db.port}`)
 // })
 
+module.exports = {
+    url: "mongodb://localhost:27017/bookmark"
+};
 

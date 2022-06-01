@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const bookmarkSchema = mongoose.Schema({
 
@@ -9,12 +10,11 @@ const bookmarkSchema = mongoose.Schema({
         type: String, required: true
     },
     description: {
-        type: Number,
-        min: 18
+        type: String, required: true
     }
 }, {
     timestamp: true
 }
 )
 
-module.exports = mongoose.model('bookmark', 'bookmarkSchema')
+module.exports = bookmarkSchema
