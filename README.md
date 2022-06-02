@@ -34,3 +34,8 @@ ERD:
 <img src = "ERD.png">
 
 ### 🚀 Next Steps 
+- Authentication 
+- CRUD
+  - Create Folder to help organize content
+- 3rd Party API 
+- Search Function 
